@@ -9,9 +9,9 @@ import (
 var (
 	
 	rootCmd = &cobra.Command{
-		Use:   "cobra-cli",
-		Short: "ip-tracker cli tool",
-		Long:  `ip-tracker cli tool`,
+		Use:   "ipscout",
+		Short: "ipscout cli tool",
+		Long:  `ipscout cli tool`,
 	}
 )
 

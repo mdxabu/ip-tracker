@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/mdxabu/ip-tracker/cmd"
+	"github.com/mdxabu/ipscout/cmd"
 )
 
 func main() {

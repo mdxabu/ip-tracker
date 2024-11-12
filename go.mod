@@ -1,4 +1,4 @@
-module github.com/mdxabu/ip-tracker
+module github.com/mdxabu/ipscout
 
 go 1.23.2
 
