@@ -19,7 +19,7 @@ To install and run the IpScout, follow these steps:
     ```
 2. Navigate to the project directory:
     ```bash
-    cd ip-tracker
+    cd ipscout
     ```
 3. Build the project:
     ```bash
@@ -29,7 +29,7 @@ To install and run the IpScout, follow these steps:
 ## Usage
 To start the IpScout, run the following command:
 ```bash
-./ipscout
+ipscout
 ```
 The application will start and you can access it via your terminal.
 

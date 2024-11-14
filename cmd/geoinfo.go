@@ -21,6 +21,7 @@ var geoCmd = &cobra.Command{
 			fmt.Printf("Error retrieving information for IP %s: %v\n", ip, err)
 			return
 		}
+		// Print the IP geolocation info
 		fmt.Println(info)
 	},
 }

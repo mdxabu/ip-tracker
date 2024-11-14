@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// IPInfo holds the geolocation data.
 type IPInfo struct {
 	IP        string `json:"ip"`
 	City      string `json:"city"`
@@ -20,6 +21,7 @@ type IPInfo struct {
 	MapURL    string `json:"map_url"`
 }
 
+// GetIPInfo retrieves geolocation information for the provided IP address.
 func GetIPInfo(ip string) (string, error) {
 	url := fmt.Sprintf("https://ipinfo.io/%s/json", ip)
 	resp, err := http.Get(url)
@@ -28,10 +30,12 @@ func GetIPInfo(ip string) (string, error) {
 	}
 	defer resp.Body.Close()
 
+	// Check if the response is successful
 	if resp.StatusCode != http.StatusOK {
 		return "", fmt.Errorf("failed to get IP info: %s", resp.Status)
 	}
 
+	// Parse the JSON response
 	var info IPInfo
 	if err := json.NewDecoder(resp.Body).Decode(&info); err != nil {
 		return "", err
